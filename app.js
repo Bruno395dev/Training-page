@@ -1,8 +1,10 @@
-const boton = document.getElementById('mostrarMensajeBtn');
+const formulario = document.getElementById('formulario');
+const nombreInput = document.getElementById('nombre'); // nombreInput, no nombre
 const mensaje = document.getElementById('mensaje');
 
-boton.addEventListener('click', function() {
-  mensaje.innerText = '¡Este es el mensaje en grande!';
-  mensaje.style.fontSize = '2em'; // Hace el texto grande
-  mensaje.style.fontWeight = 'bold';
+formulario.addEventListener('submit', function (event) {
+  event.preventDefault();
+  const nombre = nombreInput.value;
+  mensaje.innerText = `Registro exitoso, ${nombre}!`;
+  
 });

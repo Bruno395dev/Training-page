@@ -4,47 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Municipalidad de SMA</title>
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
     <header>
-        <h1>Municipalidad de SMA</h1>
-        <nav>
-            <div>
-                <li>
-                    <a href="">Inicio</a>
-                </li>
-            </div>
-            <div>
-                <li>
-                    <a href="">Tramites</a>
-                </li>
-            </div>
-            <div>
-                <li>
-                    <a href="">Contacto</a>
-                </li>
-            </div>
-        </nav>
-
+        <h1>Registro de Usuario</h1>
     </header>
     <main>
-        <h1>
-            Bienvendio al Portal de Tramites
-        </h1>
-        <p>Texto explicativo Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptatibus tempore ea
-            quasi quaerat facere ipsa non repellat. Tempora accusantium voluptas blanditiis maxime quisquam fugiat.
-            Totam numquam iure beatae aperiam!</p>
-        <div>
-            <button id="mostrarMensajeBtn">Mostrar mensaje</button>
-            <div id="mensaje"></div>
-        </div>
+        <form action="" method="POST" id="formulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Registrar</button>
+        </form>
+        <div id="mensaje"></div>
 
     </main>
     <footer>
-        <p>© Municipalidad de San Martín de los Andes 2025</p>
+        <p>© 2025 Portal de la Municipalidad</p>
     </footer>
     <script src="./app.js"></script>
 </body>
