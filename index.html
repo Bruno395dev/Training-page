@@ -4,32 +4,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Municipalidad de SMA</title>
+    <title>SMA Avanza</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
     <header>
-        <h1>Registro de Usuario</h1>
+        <h1>Bienvenido al portal de trámites</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <form action="" method="POST" id="formulario">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="password">Contraseña:</label>
-            <input type="password" id="password" name="password" required>
-
-            <button type="submit">Registrar</button>
-        </form>
-        <div id="mensaje"></div>
-
+        <section id="card-container">
+            <div class="card">
+                <img src="./assets/card1.png" alt="Trámite 1">
+            </div>
+            <div class="card">
+                <img src="./assets/card2.png" alt="Trámite 2">
+            </div>
+            <div class="card">
+                <img src="./assets/card3.png" alt="Trámite 3">
+            </div>
+            <div class="card">
+                <img src="./assets/card4.png" alt="Trámite 4">
+            </div>
+            <div class="card">
+                <img src="./assets/card5.png" alt="Trámite 5">
+            </div>
+            <div class="card">
+                <img src="./assets/card6.png" alt="Trámite 6">
+            </div>
+        </section>
+        <section id="formulario-container">
+            <h2>Iniciar trámite</h2>
+            <form action="" method="post" id="formulario">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <select id="tramite" name="tramite" required>
+                    <option value="">Tipo de trámite</option>
+                    <option value="tramite1">Cambio de Domicilio</option>
+                    <option value="tramite2">Multas</option>
+                    <option value="tramite3">Impuestos municipales</option>
+                </select>
+                <button type="submit">Enviar</button>
+                <div id="mensaje"></div>
+            </form>
+        </section>
     </main>
     <footer>
-        <p>© 2025 Portal de la Municipalidad</p>
+        <p>© 2023 SMA Avanza. Todos los derechos reservados.</p>
+        <div class="footer-links">
+            <a href="#">Política de privacidad</a>
+            <a href="#">Términos de servicio</a>
+            <a href="#">Ayuda</a>
+        </div>
+        <div id="social-media">
+            <a href="#"><img src="./assets/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="./assets/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="./assets/instagram.png" alt="Instagram"></a>
+        </div>
     </footer>
     <script src="./app.js"></script>
 </body>
